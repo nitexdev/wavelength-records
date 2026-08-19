@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #12142B;
+  --color-ink-soft: #1C1F3D;
+  --color-paper: #F3F1E9;
+  --color-gold: #E0B23C;
+  --color-gold-dim: #9C8A4E;
+  --color-red: #D45D4C;
+
+  --font-display: "Archivo Black", "Archivo", sans-serif;
+  --font-sans: "Archivo", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+}
+
+.tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Signature element: record label badge - a circular price tag echoing a vinyl label */
+.record-badge {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 9999px;
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-align: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.record-badge::after {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--color-ink);
+}
+
+.btn-gold {
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+  font-weight: 700;
+  transition: background-color 0.15s ease;
+}
+.btn-gold:hover {
+  background-color: #f0c869;
+}
+
+.card {
+  background-color: var(--color-ink-soft);
+  border: 1px solid rgba(224, 178, 60, 0.15);
+}
