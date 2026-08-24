@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { api } from "../api";
 import { useCart } from "../context/CartContext";
+import VinylPlaceholder from "../components/VinylPlaceholder";
 
 const formatPrice = (cents) => `$${(cents / 100).toFixed(2)}`;
 
@@ -30,9 +31,7 @@ export default function ProductDetail() {
         {product.image_url ? (
           <img src={product.image_url} alt={`${product.artist} — ${product.name}`} className="w-full h-full object-cover" />
         ) : (
-          <div className="w-40 h-40 rounded-full border-2 border-[var(--color-gold-dim)] flex items-center justify-center">
-            <div className="w-4 h-4 rounded-full bg-[var(--color-gold-dim)]" />
-          </div>
+          <VinylPlaceholder className="w-2/3 h-2/3" />
         )}
       </div>
 
