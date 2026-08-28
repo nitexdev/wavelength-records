@@ -2,6 +2,8 @@
 
 A vinyl record storefront — product catalog, cart, and Stripe checkout (test mode). Built to demonstrate a Django REST Framework backend paired with a React frontend, plus a real payment integration pattern.
 
+
+https://wavelength-records.vercel.app/
 <img width="4476" height="3602" alt="wavelength-records vercel app_" src="https://github.com/user-attachments/assets/05f59fc4-3450-402c-86ac-7c9341484c3d" />
 
 
