@@ -9,3 +9,6 @@ venv/
 .venv/
 .DS_Store
 *.log
+*.png
+*.jpg
+*-project-summary.md
